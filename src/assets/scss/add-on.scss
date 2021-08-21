@@ -1,0 +1,30 @@
+.footer-md::before {
+  display: none;
+}
+
+ion-footer {
+  height: 80%;
+  background-color: rgba(51, 162, 219, 1);
+  ion-slides{
+    height: 100%;
+  }
+}
+.bg{
+    background-color: rgba(51, 162, 219, 1) !important;
+    height: 100%;
+}
+
+.swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 1;
+  width: 6px !important;
+  height: 6px !important;
+}
+.swiper-pagination-bullet-active{
+  background: var(--bullet-background-active) !important;
+  width: 6px !important;
+  height: 6px !important;
+}
+.swiper-pagination {
+  padding-bottom: 3rem;
+}

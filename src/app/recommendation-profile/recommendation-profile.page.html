@@ -1,0 +1,49 @@
+<ion-content>
+  <div class="a-h100">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/" color="light"></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        Daily Recommendations
+      </ion-title>
+    </ion-toolbar>
+    <ion-card *ngFor="let profile of profileList; let i = index" [ngClass]="{'d-none': i !== 0}">
+      <ion-card-header class="ion-no-padding w100">
+        <img src="assets/img/nazi1.jpg" class="w100">
+      </ion-card-header>
+      <ion-card-content>
+        <div class="d-f h100">
+          <div class="f1 ion-padding-top">
+            <ion-label class="verified">Verified</ion-label>
+            <ion-label class="premium">Premium NRI</ion-label>
+            <ion-title class="ion-no-padding name">
+            {{profile.name}}
+            </ion-title>
+            <ion-text class="spe">
+              {{profile.specification}}
+            </ion-text>
+          </div>
+          <div class="d-fo">
+            <ng-container *ngIf="!fav">
+              <ion-icon name="star-outline" class="star" (click)="star()"></ion-icon>
+            </ng-container>
+            <ng-container *ngIf="fav">
+              <ion-icon name="star" class="star active" (click)="star()"></ion-icon>
+            </ng-container>
+            Shortlist
+            <span class="ml-auto" (click)="star()">
+              Like her?
+            </span>
+            <ion-button shape="round" color="light" class="ion-no-padding" (click)="notInterested()">
+              <ion-icon name="close" class="btn-icon"></ion-icon>
+            </ion-button>
+            <ion-button shape="round" class="primary ion-no-padding" (click)="interested()">
+              <ion-icon name="checkmark" class="btn-icon"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

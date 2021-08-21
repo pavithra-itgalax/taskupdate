@@ -1,0 +1,130 @@
+.a-h100 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // background: rgb(88,186,108);
+  background: linear-gradient(180deg, rgb(88 186 108) 7%, rgb(33 176 187) 50%, rgb(241 241 241) 50%);
+}
+
+img {
+  min-width: 100%;
+}
+.d-none{
+  display: none !important;
+}
+ion-card {
+  border-radius: 15px;
+  flex: 1;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.w100{
+  width: 100%;
+}
+ion-card-content, .f1{
+  flex: 1;
+}
+.d-f{
+  display: flex;
+  flex-direction: column;
+}
+.d-fo{
+  display: flex;
+  align-items: center;
+}
+.h100{
+  height: 100%;
+}
+.ml-auto{
+  margin-left: auto;
+  font-weight: 600;
+    color: #000000;
+    font-size: 18px;
+    margin-right: 1rem;
+}
+
+ion-toolbar,
+.toolbar-background {
+  --background-color: transparent !important;
+  --background: transparent !important;
+  --ion-color-base: transparent !important;
+  color: #ffffff !important;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header-md::after {
+  display: none !important;
+}
+
+body {
+  background: #a8ff78;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #78ffd6, #a8ff78);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #78ffd6, #a8ff78);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.verified{
+  color: #3880ff;
+  font-size: 14px;
+  padding-right: 1rem;
+}
+.premium
+{
+  color: #a654e2;
+    font-size: 14px;
+}
+.name{
+  font-weight: 600;
+  color: #000000;
+  opacity: 1;
+  font-size: 23px;
+  padding-bottom: 7px;
+  padding-top: 3px;
+}
+.spe{
+  font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+}
+.star
+{
+  font-size: 20px;
+  padding-right: 0.5rem;
+}
+.btn-icon{
+  font-size: 20px;
+  padding: 0 0.8rem;
+}
+.primary{
+  --background: rgba(255, 152, 0, 1) !important;
+}
+.active{
+  color: rgba(255, 152, 0, 1) !important;
+}
+@media(min-width:1025px){
+  img{
+    height: 100%;
+  }
+  ion-card{
+    display: flex !important;
+    flex-direction: row;
+    ion-card-header{
+      width: 100% !important;
+      flex: 1;
+    }
+    ion-card-content{
+      width: 100%;
+      padding: 1rem 1.5rem;
+      ion-title{
+        padding-bottom: 1rem;
+      }
+      .yn{
+        margin-top: 2rem !important;
+      }
+    }
+  }
+}
